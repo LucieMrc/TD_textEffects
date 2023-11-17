@@ -1,7 +1,7 @@
 # Touchdesigner Text Effects
 
 **On how to play around with text with Touchdesigner effects.**
-
+ 
 ## To begin with
 
 - My [Introduction to Touchdesigner](https://github.com/LucieMrc/IntroTD)
@@ -48,7 +48,7 @@ The second network is the same video and the same nodes, but in a feedback loop.
 
 ![screen de TD](./images/letters.gif)
 
-Template file to download : feedback_video_text.toe
+Template file to download : letterbyletter.toe
 
 ## The template
 
@@ -75,6 +75,18 @@ If you look inside the `LetterByLetter` base, there is a `Parameter` DAT, `Selec
 The only things you should really modify here are the `Text` TOP parameters, and mostly the `Font` page and and the `Common` page to change the resolution.
 
 ![screen de TD](./images/screen6.png)
+
+# Text distortion on 3D objects
+
+![screen de TD](./images/curvedText.gif)
+
+Template file to download : curvedText.toe
+
+## The template
+
+![screen de TD](./images/screen7.png)
+
+There are 4 bases in the template, a `table` DAT for your text, a `Switch` TOP to switch between the different bases outputs to display in the `Out` TOP.
 
 # To go further (if you understand Touchdesigner)
 
