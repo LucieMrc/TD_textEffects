@@ -1,14 +1,16 @@
-# Touchdesigner Text Feedback
+# Touchdesigner Text Effects
 
-**On how to modify with a video with feedback effects.**
-
-Template file to download : feedback_video_text.toe
+**On how to play around with text with Touchdesigner effects.**
 
 ## To begin with
 
 - My [Introduction to Touchdesigner](https://github.com/LucieMrc/IntroTD)
 
-- Intro + tutorial about [Feedback loop in TD (EN)](https://github.com/LucieMrc/TD_feedback_love_EN)
+- Intro + tutorial about [Feedback loop in TD (EN)](https://github.com/LucieMrc/TD_feedback_love_EN).
+
+# Text Feedback
+
+Template file to download : feedback_video_text.toe
 
 ## The template
 
@@ -18,7 +20,7 @@ The template is showing you two examples of feedback look, + pre feedback and po
 
 From left to right : 
 
-- the `Movie File In` TOP in which you can add your video
+- the `Movie File In` TOP in which you can add your video, or replace by whatever TOP you want.
 
 - the Pre Feedback container, with a `Level` TOP allowing you to adjust your video contrast, brightness, black level, color range, and more; and a `Displace` TOP (+ its noise) which deforms the video.
 
@@ -32,13 +34,22 @@ To understand better feedback loops, its structure and basic components, you sho
 
 One of the most important thing in your feedback loop will be the mode of your `Composite` TOP at the end of the loop. It will define how you blend each frame that has passed through all the modifier nodes, with the precedent frame.
 
-Each TOP node in your feedback loop between the `Feedback` TOP and the `Composite` TOP should have their parameters very low, as the frames will goes through the nodes very fast, compared to a node before or after the feedback loop.
+Each TOP node in your feedback loop between the `Feedback` TOP and the `Composite` TOP should have their parameters very low, as the effect of the nodes will be added on top on each other, as opposed to a node before or after the feedback loop.
 
 ![screen de TD](./images/screen2.png)
 
 The first network is the video going through a `Level` TOP to add contrast, then through a `Displace` TOP to sligthly deform it.
 
-The second network is the same video and the same nodes, but in a feedback loop. We can see the video became too distorted to read the text, and the image eventually become full black if we let it run for a few seconds, because each frame add atop of the precedents.
+The second network is the same video and the same nodes, but in a feedback loop. We can see the video became too distorted to read the text, and the image eventually become full black if we let it run for a few seconds, because each frame add atop of the precedents. 
+
+# Text letter by letter
+
+Template file to download : feedback_video_text.toe
+
+## The template
+
+
+
 
 # To go further
 
