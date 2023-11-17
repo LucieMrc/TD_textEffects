@@ -10,6 +10,8 @@
 
 # Text Feedback
 
+![screen de TD](./images/feedback.gif)
+
 Template file to download : feedback_video_text.toe
 
 ## The template
@@ -44,13 +46,40 @@ The second network is the same video and the same nodes, but in a feedback loop.
 
 # Text letter by letter
 
+![screen de TD](./images/letters.gif)
+
 Template file to download : feedback_video_text.toe
 
 ## The template
 
+The template is showing you a very basic animation of a word or group of words appearing letter by letter.
 
+![screen de TD](./images/screen3.png)
 
+All the magic is happening inside a custom base named LetterByLetter, with an `Out` TOP to display and modify the result.
 
-# To go further
+In the parameters of the base, there is a `Parameters` page where we can input the text, change the delay between the letters (in seconds). We can also choose the X and Y position of the text, and the font size.
 
-# TD_textFeedback
+![screen de TD](./images/screen4.png)
+
+To start the animation, we click on the `Start` pulse button.
+
+The `Start` button is linked to a `Keyboard In` CHOP to also start the animation when we press "q".
+
+## Inside the base
+
+If you look inside the `LetterByLetter` base, there is a `Parameter` DAT, `Select` DAT and `DAT to` CHOP to get informations from the parameters page of the base, a `Timer` CHOP to start and choose the timing of the animation, and a `Text` TOP going into an `Out` TOP to display and output the text.
+
+![screen de TD](./images/screen5.png)
+
+The only things you should really modify here are the `Text` TOP parameters, and mostly the `Font` page and and the `Common` page to change the resolution.
+
+![screen de TD](./images/screen6.png)
+
+# To go further (if you understand Touchdesigner)
+
+- Youtube tuto : [Time displacement and click transitions controlled by the mouse](https://www.youtube.com/watch?v=l4IZdNPrKAI&t=1s&ab_channel=PPPANIK)
+
+- Youtube tuto : [Typography adventures](https://www.youtube.com/watch?v=-XdpLPIXmxA&ab_channel=PPPANIK)
+
+- Youtube tuto : [Sliced Type](https://www.youtube.com/watch?v=DeCaJ5EwyIg&ab_channel=threedashes)
