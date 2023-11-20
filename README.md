@@ -2,9 +2,9 @@
 
 **On how to play around with text with Touchdesigner effects.**
 
-* 1. [Text letter by letter](#1.-Text-letter-by-letter)
-* 2. [Text distortion on 3D objects](#2.-Text-distortion-on-3D-objects)
-* 3. [Text Feedback](#3.-Text-Feedback)
+* [1. Text letter by letter](#1-Text-letter-by-letter)
+* [2. Text distortion on 3D objects](#2-Text-distortion-on-3D-objects)
+* [3. Text Feedback](#3-Text-Feedback)
 
 ## To begin with
 
